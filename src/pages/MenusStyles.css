@@ -1,0 +1,14 @@
+.menu-grupo1
+ {
+  color: white;
+  font-size: large;
+}
+h3{
+    color: white;
+}
+.grupo1 img{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10px;
+   
+}

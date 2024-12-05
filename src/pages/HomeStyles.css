@@ -15,10 +15,10 @@ p {
   justify-content: center;
 }
 .imagen-principal img {
-  width: 600px;
+  width: 40%;
   margin-top: 50px;
   margin-bottom: 50px;
-  animation: alternate-reverse;
+ 
 }
 .titulo {
   text-align: center;

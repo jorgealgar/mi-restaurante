@@ -4,7 +4,7 @@ import LogoIg from "../assets/ig_logo.png";
 import LogoTwit from "../assets/twitter_logo.png";
 function Footer(params) {
   return (
-    <div className="footer d-flex align-items-center justify-content-around pt-5 pb-5">
+    <div className="footer d-flex flex-wrap align-items-center justify-content-around pt-5 pb-5">
       <div className="d-flex flex-column align-items-center justify-content-center ">
         <a href="/">
           {" "}

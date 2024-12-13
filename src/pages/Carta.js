@@ -12,7 +12,7 @@ const comida = [
 ]
 function Carta() {
   return (
-    <div style={{ backgroundColor: "black" }}>
+    <div style={{ backgroundColor:  "#222422"  }}>
       <Header />
       <Titulo>ENTRANTES</Titulo>
       <Entrantes></Entrantes>
@@ -20,7 +20,7 @@ function Carta() {
       <PLatosPrincipales></PLatosPrincipales>
       <Titulo>POSTRES</Titulo>
       <Postres></Postres>
-      <Titulo>COMIDA PARA LLEVAR</Titulo>
+      <Titulo>MENU DE GRUPOS</Titulo>
       <MenuGrupos></MenuGrupos>
       <hr style={{color: "white", width:"75%", marginLeft:"200px" }}></hr>
       <Footer></Footer>

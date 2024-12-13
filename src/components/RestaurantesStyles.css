@@ -3,10 +3,24 @@
 }
 
 .restaurante1 img {
-  width: 600px;
+  width:100%;
+}
+.restaurante1 .texto{
+  width: 50%;
+}
+.restaurante2 {
+  width: 100%;
 }
 
 .restaurante2 img {
-  width: 700px;
-  height: 600px;
+  width: 100%;
+  
+}
+.restaurante2 .texto2{
+  width: 50%;
+
+}
+h4 {
+  padding-bottom: 50px;
+  padding-top: 50px;
 }

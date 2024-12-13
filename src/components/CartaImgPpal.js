@@ -4,7 +4,7 @@ import imagenPlato3 from '../assets/images/plato3-carta.jpg'
 
 function ImagenesCarta(params) {
     return(
-        <div className='d-flex justify-content-around align-items-center px-5 imagenes-carta'>
+        <div className='d-flex flex-wrap justify-content-around align-items-center px-5 imagenes-carta'>
             <img src={imagenPlato1}></img>
             <img src={imagenPlato2}></img>
             <img src={imagenPlato3}></img>

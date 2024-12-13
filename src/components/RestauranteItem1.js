@@ -1,14 +1,14 @@
 import ImagenRestaurante1 from "../assets/images/rest1.avif";
-
+import  "./RestauranteItem1Styles.css";
 const RestauranteItem1 = () => {
   const text =
-    "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words";
+    "Ubicado en el centro histórico de la ciudad, La Raíz representa nuestro primer local familiar. Este restaurante rinde homenaje a las recetas tradicionales de nuestros abuelos, con un ambiente cálido y acogedor que transporta a los comensales a los orígenes de nuestra cocina, Concepto: Cocina tradicional con alma contemporánea. Un espacio donde los sabores clásicos se encuentran con técnicas modernas de preparación. Cada plato cuenta una historia de herencia familiar, con ingredientes locales y recetas transmitidas por generaciones, Ambiente: Decoración rústica con elementos vintage, maderas cálidas, fotografías familiares y utensilios de cocina antiguos que decoran las paredes. Música suave de fondo que recrea la atmósfera de una cocina tradicional.";
   return (
-    <div className="rest-item d-flex justify-content-center w-100 align-content-around pb-5">
-      <div className="d-flex flex-column justify-content-center align-items-center ">
+    <div className="rest-item d-flex  justify-content-center  align-content-around pb-5">
+      <div className=" texto1 d-flex flex-wrap flex-column justify-content-center align-items-center ">
         <article className="texto d-flex flex-column align-items-center text-align-center w-50">
           <h2 style={{ color: "white" }} className="pb-5">
-            Restaurante 1
+            LA RAIZ
           </h2>
 
           <p>{text}</p>
@@ -30,7 +30,7 @@ const RestauranteItem1 = () => {
           </a>
         </div>
       </div>
-      <div className="d-flex w-100 py-5 px-5 flex-wrap">
+      <div className="imagen1 py-5 px-5 ">
         <img src={ImagenRestaurante1} alt="imagen-restaurante1"></img>
       </div>
     </div>

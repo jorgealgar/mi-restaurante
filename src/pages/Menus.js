@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 
 const MenusGrupos = () => {
   return (
-    <div style={{ backgroundColor: "black" }}>
+    <div style={{ backgroundColor: "#222422"  }}>
       <Header></Header>
       <Titulo>MENUS DE GRUPOS</Titulo>
       <section className="grupo1 d-flex justify-content-around  align-items-center flex-wrap pb-5">

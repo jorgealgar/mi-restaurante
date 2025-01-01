@@ -8,7 +8,6 @@ import "./MenuGruposStyles.css";
 
 const MenuGrupos = (img) => {
   return (
-          <li>Plato 1</li>
     <div className="menu-grupos d-flex flex-wrap justify-content-around px-5 w-100 pb-5 pt-5">
       <Card className="mt-3" style={{ width: "30rem" }}>
         <Card.Img variant="top" src={ImgMenuLlevar1} />

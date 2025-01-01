@@ -5,14 +5,12 @@ import Footer from "../components/Footer";
 import Postres from "../components/Postres";
 import PLatosPrincipales from "../components/PlatosPrincipales";
 import MenuGrupos from "../components/MenuGrupos";
-const comida = [
-  {
-    
-  }
-]
+import CartaMenusLlevar from "../components/CartaMenusLlevar";
+import Cookies from "../components/Cookies";
+
 function Carta() {
   return (
-    <div style={{ backgroundColor:  "#222422"  }}>
+    <div style={{ backgroundColor: "#222422" }}>
       <Header />
       <Titulo>ENTRANTES</Titulo>
       <Entrantes></Entrantes>
@@ -22,9 +20,15 @@ function Carta() {
       <Postres></Postres>
       <Titulo>MENU DE GRUPOS</Titulo>
       <MenuGrupos></MenuGrupos>
-      <hr style={{color: "white", width:"75%", marginLeft:"200px" }}></hr>
-      <Footer></Footer>
+      <Titulo>COMIDA PARA LLEVAR</Titulo>
+      <CartaMenusLlevar></CartaMenusLlevar>
 
+      <div className="d-flex justify-content-center">
+        <hr style={{ color: "white", width: "75%" }}></hr>
+      </div>
+
+      <Footer></Footer>
+      <Cookies />
     </div>
   );
 }

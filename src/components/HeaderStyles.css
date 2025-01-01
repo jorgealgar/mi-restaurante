@@ -1,6 +1,6 @@
 .header {
   background-color: rgb(54, 55, 56);
-  background: linear-gradient(to bottom, rgb(60, 60, 60), rgb(226, 224, 224));
+  background: linear-gradient(to top, rgb(60, 60, 60), rgb(226, 224, 224));
   height: 200px;
   display: flex;
   flex-wrap: wrap;

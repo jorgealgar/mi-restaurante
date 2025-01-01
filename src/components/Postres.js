@@ -2,9 +2,13 @@ import PostresItem from "./PostresItem";
 import ImagenPostre1 from "../assets/images/postre1.avif";
 import ImagenPostre2 from "../assets/images/postre2.avif";
 import ImagenPostre3 from "../assets/images/postre3.avif";
+import "./PostresStyles.css";
 const Postres = (img, text) => {
   const text1 =
-    "Chocolate con Coco: Chocolate negro, con base de coco rallado, Virutas de coco tostado";
+  <>
+  Chocolate con Coco: <br/> Chocolate negro, con base de coco rallado, Virutas de coco tostado;
+  </>
+    
   const text2 =
     "Brownie de Chocolate con Coco : Descripción: Brownie casero de chocolate negro, con base de coco rallado";
   const text3 =

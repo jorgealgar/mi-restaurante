@@ -2,6 +2,7 @@ import PlatosPrincipalesItem from "./PlatosPrincipalesItem";
 import ImgPlatoPpal1 from "../assets/images/platoppal1.avif";
 import ImgPlatoPpal2 from "../assets/images/platoppal2.avif";
 import ImgPlatoPpal3 from "../assets/images/platoppal3.avif";
+import "./PlprincipalesStyles.css"
 
 const PLatosPrincipales = (img, text) => {
   const text1 =
@@ -11,7 +12,7 @@ const PLatosPrincipales = (img, text) => {
   const text3 =
     "Chuletón a la Parrilla:Descripción: Chuletón de buey madurado, cocinado a la parrilla,Grueso, de más de 500 gramos ";
   return (
-    <div className="contenedor-postres d-flex justify-content-around align-items-center flex-wrap ">
+    <div className="contenedor-principales d-flex justify-content-around align-items-center flex-wrap ">
       <PlatosPrincipalesItem
         img={ImgPlatoPpal1}
         txt={text1}

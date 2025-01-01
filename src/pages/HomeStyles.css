@@ -15,7 +15,7 @@ p {
   justify-content: center;
 }
 .imagen-principal img {
-  width: 40%;
+  width: 70%;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -48,6 +48,7 @@ nav {
 .imagenes-carta img {
   width: 350px;
   height: 520px;
+  margin-bottom: 30px;
 }
 
 .footer {

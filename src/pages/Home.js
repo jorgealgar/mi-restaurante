@@ -7,6 +7,8 @@ import Restaurantes from "../components/Restaurantes";
 import Footer from "../components/Footer";
 import imgRest1 from "../assets/images/rest1.avif";
 import imgRest2 from "../assets/images/rest2.avif";
+import Cookies from "../components/Cookies";
+
 //Creo una variable restaurante que es un objeto dentro de una lista en el que sus keys van a cambiar.
 const restaurantes = [
   {
@@ -25,7 +27,7 @@ const restaurantes = [
 
 function Home() {
   return (
-    <div style={{ backgroundColor:"#222422"  }}>
+    <div style={{ backgroundColor: "#222422" }}>
       <Header />
       <ImagenInicio />
       <p className="px-5 d-flex">
@@ -68,8 +70,11 @@ function Home() {
         a sentarte a nuestra mesa, a probar no solo comida, sino décadas de
         historia, tradición y amor por la cocina.
       </p>
-      <hr style={{ color: "white", width: "75%", marginLeft: "200px" }}></hr>
+      <div className="d-flex justify-content-center">
+        <hr style={{ color: "white", width: "75%" }}></hr>
+      </div>
       <Footer></Footer>
+      <Cookies />
     </div>
   );
 }

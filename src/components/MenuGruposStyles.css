@@ -1,27 +1,16 @@
-.menu-grupos{
-  background: linear-gradient(to bottom,grey,white);
+.texto {
+  color: rgb(244, 236, 236);
+  
 }
-.lista-menu-grupo,
-ul {
-  list-style-type: none;
-  align-items: center;
-  justify-content: center;
-  padding-left: 5px;
-  text-align: center;
-}
-.grupo {
-  color: rgb(20, 21, 21);
-  text-align: center;
-}
+
 h3 {
   text-align: center;
   padding-left: 5px;
 }
-.imagenes-grupos img{
-  width: 40%;
-  height: 40%;
- 
+div .card .card-body{
+  background-color: rgb(77, 83, 80);
 }
-.card img{
-  width: 100%;
+div .card .card-title{
+  color: rgb(241, 241, 234);
+  
 }

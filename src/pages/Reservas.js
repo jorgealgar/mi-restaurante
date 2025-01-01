@@ -5,6 +5,7 @@ import Mapa from "../components/Mapa";
 import Titulo from "../components/Titulo";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import Cookies from "../components/Cookies";
 
 import "./ReservasStyles.css";
 const Reservas = () => {
@@ -18,7 +19,7 @@ const Reservas = () => {
     <div style={{ backgroundColor: "#222422" }}>
       <Header></Header>
       <Titulo>RESERVAS Y LOCALIZACIÓN</Titulo>
-      <div className="formulario w-100 d-flex justify-content-around align-items-center p-5">
+      <div className="formulario w-100 d-flex  flex-wrap justify-content-around align-items-center p-5">
         <Form data-bs-theme="dark" onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formName">
             <Form.Label style={{ color: "white" }}>Nombre</Form.Label>
@@ -89,11 +90,16 @@ const Reservas = () => {
   }, false);
 })();
 </script>*/}
-        <Mapa></Mapa>
+        <div className="d-flex flex-wrap justify-content-around ">
+          <Mapa></Mapa>
+        </div>
+      </div>
+      <div className="d-flex justify-content-center">
+        <hr style={{ color: "white", width: "75%" }}></hr>
       </div>
 
-      <hr style={{ color: "white", width: "75%", marginLeft: "200px" }}></hr>
       <Footer></Footer>
+      <Cookies />
     </div>
   );
 };

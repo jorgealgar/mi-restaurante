@@ -1,6 +1,16 @@
 .contenedor-entrantes {
-    width: 100%;
+  width: 100%;
+  height: auto;
 }
-.entrantes{
-    width: 100%;
+
+.entrantes {
+  height: 700px;
+}
+.entrantes img {
+  height: 60%;
+  max-width: 400px;
+}
+.entrantes p {
+  height: 40%;
+  margin: 0px;
 }

@@ -12,9 +12,11 @@ const Cookies = () => {
   const [legacyAccepted, setLegacyAccepted] = useState(false);
   // Al montar el componente, verifica si el usuario ya aceptó las políticas.
   useEffect(() => {
-    const clicado = localStorage.getItem("politicasClicadas" || "cookiesClicadas" || "legacyClicadas") === "true";
+    const clicado =
+      localStorage.getItem(
+        "politicasClicadas" && "cookiesClicadas" && "legacyClicadas"
+      ) === "true";
     setVisible(!clicado); // Si ya aceptó, no se muestra el banner.
-
   }, []); // Efecto que se ejecuta solo una vez al montar el componente.
 
   // Maneja la acción de aceptar las cookies, guardando la decisión en localStorage.
@@ -23,7 +25,7 @@ const Cookies = () => {
     setVisible(false); // Oculta el banner.
     localStorage.setItem("cookiesClicadas", "true");
     setVisible(false);
-    localStorage.setItem("legacyClicadas", "true")
+    localStorage.setItem("legacyClicadas", "true");
     setVisible(false);
   };
 
@@ -37,8 +39,8 @@ const Cookies = () => {
     setCookiesAccepted(e.target.checked);
   };
 
-   //Maneja el cambio del checkbox, actualizando el estado de aceptacion del aviso legal..
-   const handleLegacyAccepted = (e) => {
+  //Maneja el cambio del checkbox, actualizando el estado de aceptacion del aviso legal..
+  const handleLegacyAccepted = (e) => {
     setLegacyAccepted(e.target.checked);
   };
 

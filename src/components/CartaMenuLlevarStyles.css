@@ -1,0 +1,16 @@
+.caorusel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  height: 500px;
+  margin: 0 auto;
+}
+.caorusel .img {
+  width: 800px;
+  height: 500px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+ 
+}

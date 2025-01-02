@@ -8,18 +8,22 @@ import Form from "react-bootstrap/Form";
 import Cookies from "../components/Cookies";
 
 import "./ReservasStyles.css";
+
+
 const Reservas = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const formElements = event.currentTarget.elements;
-    console.log(formElements.formDate.value);
+    console.log(formElements.formEmail.value);
   };
+
+  
 
   return (
     <div style={{ backgroundColor: "#222422" }}>
       <Header></Header>
       <Titulo>RESERVAS Y LOCALIZACIÓN</Titulo>
-      <div className="formulario w-100 d-flex  flex-wrap justify-content-around align-items-center p-5">
+      <div className="formulario w-100 d-flex flex-wrap justify-content-around align-items-center p-5">
         <Form data-bs-theme="dark" onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formName">
             <Form.Label style={{ color: "white" }}>Nombre</Form.Label>
@@ -70,27 +74,7 @@ const Reservas = () => {
           </Button>
         </Form>
 
-        {/*<script>
-// Example starter JavaScript for disabling form submissions if there are invalid fields
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByclassNameName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classNameList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
-</script>*/}
-        <div className="d-flex flex-wrap justify-content-around ">
+        <div className="d-flex flex-wrap w-50">
           <Mapa></Mapa>
         </div>
       </div>

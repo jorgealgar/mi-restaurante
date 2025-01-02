@@ -15,7 +15,7 @@ const Especialidades = () => {
       <div className="especialidades  d-flex flex-column align-items-center justify-content-around">
         <img className="w-50 pb-5 " src={ImgEspecialidad1} alt="img1"></img>
         <h2 style={{ color: "white" }}>NUESTRAS ESPECIALIDADES</h2>
-        <p className="w-75 pt-3">{texto}</p>
+        <p className="w-50 pt-3">{texto}</p>
         <img className="w-50 pt-5 pb-5" src={ImgEspecialidad2} alt="img2"></img>
       </div>
       <div className="d-flex justify-content-center">

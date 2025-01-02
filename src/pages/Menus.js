@@ -39,7 +39,7 @@ const MenusGrupos = () => {
             <li>Brownie templado con helado de vainilla</li>
             <li>Tiramisú tradicional</li>
           </ul>
-          <p> Precio 50€</p>
+          <p><strong> Precio 50€</strong></p>
           <a href="/reservas">
             <button
               className="btn btn-secondary mt-5 mb-5 btn-lg"
@@ -75,7 +75,7 @@ const MenusGrupos = () => {
             <li>Tarta tatin de manzana con crema inglesa</li>
             <li>Pannacotta de vainilla con frutos rojos</li>
           </ul>
-          <p> Precio 50€</p>
+          <p><strong> Precio 50€</strong></p>
           <a href="/reservas">
             <button
               className="btn btn-secondary mt-5 mb-5 btn-lg"

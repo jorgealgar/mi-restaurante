@@ -3,7 +3,7 @@ import ImgMenuLlevar2 from "../assets/images/menu-llevar2.avif";
 import ImgMenuLlevar3 from "../assets/images/menu-llevar3.avif";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
-
+import Dropdown from "react-bootstrap/Dropdown";
 import "./MenuGruposStyles.css";
 
 const MenuGrupos = (img) => {
@@ -11,7 +11,7 @@ const MenuGrupos = (img) => {
     <div className="menu-grupos d-flex flex-wrap justify-content-around px-5 w-100 pb-5 pt-5">
       <Card className="mt-3" style={{ width: "30rem" }}>
         <Card.Img variant="top" src={ImgMenuLlevar1} />
-        <Card.Body className="card" >
+        <Card.Body className="card">
           <Card.Title>Menu de Grupo 1: "Sabores Tradicionales"</Card.Title>
           <Card.Text className="texto">
             Sumérgete en un viaje gastronómico que celebra los sabores más
@@ -24,14 +24,20 @@ const MenuGrupos = (img) => {
             característico exterior tostado y un interior cremoso que derrite en
             la boca, acompañado de un café o digestivo.
           </Card.Text>
-          <a href="/Menus">
-          <Button variant="secondary">VER</Button>
-          </a>
+          <Dropdown>
+            <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+              VER OPCIONES
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item href="/Menus">VISITAR MENU</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         </Card.Body>
       </Card>
       <Card className="mt-3" style={{ width: "30rem" }}>
         <Card.Img variant="top" src={ImgMenuLlevar2} />
-        <Card.Body >
+        <Card.Body>
           <Card.Title>Menu de Grupo 2: "Fusion Contemporanea"</Card.Title>
           <Card.Text className="texto">
             Invitamos a los grupos a explorar una experiencia gastronómica que
@@ -44,9 +50,15 @@ const MenuGrupos = (img) => {
             sobre un cremoso puré de coliflor y reducción de vino tinto, que
             desafía los límites de la cocina tradicional.
           </Card.Text>
-          <a href="/Menus">
-          <Button variant="secondary">VER</Button>
-          </a>
+          <Dropdown>
+            <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+              VER OPCIONES
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu>
+              <Dropdown.Item href="/Menus">VISITAR MENU</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         </Card.Body>
       </Card>
     </div>

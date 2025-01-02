@@ -7,6 +7,7 @@ import PLatosPrincipales from "../components/PlatosPrincipales";
 import MenuGrupos from "../components/MenuGrupos";
 import CartaMenusLlevar from "../components/CartaMenusLlevar";
 import Cookies from "../components/Cookies";
+import ControlledCarousel from "../components/CartaMenusLlevar";
 
 function Carta() {
   return (
@@ -21,7 +22,7 @@ function Carta() {
       <Titulo>MENU DE GRUPOS</Titulo>
       <MenuGrupos></MenuGrupos>
       <Titulo>COMIDA PARA LLEVAR</Titulo>
-      <CartaMenusLlevar></CartaMenusLlevar>
+      <ControlledCarousel/>
 
       <div className="d-flex justify-content-center">
         <hr style={{ color: "white", width: "75%" }}></hr>

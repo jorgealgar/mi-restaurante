@@ -8,7 +8,7 @@ const Cookies = () => {
   const [privacyAccepted, setPrivacyAccepted] = useState(false);
   //Estado que verifica si se han aceptado las cookies.
   const [cookiesAccepted, setCookiesAccepted] = useState(false);
-  //Estado que verifica si se ha aceptado el aviso legal..
+  //Estado que verifica si se ha aceptado el aviso legal.
   const [legacyAccepted, setLegacyAccepted] = useState(false);
   // Al montar el componente, verifica si el usuario ya aceptó las políticas.
   useEffect(() => {
@@ -37,6 +37,7 @@ const Cookies = () => {
   //Maneja el cambio del checkbox, actualizando el estado de aceptacion de cookies.
   const handleCookiesAccepted = (e) => {
     setCookiesAccepted(e.target.checked);
+    
   };
 
   //Maneja el cambio del checkbox, actualizando el estado de aceptacion del aviso legal..
@@ -48,9 +49,10 @@ const Cookies = () => {
   if (visible) {
     return (
       <div
-        className="fixed-bottom py-4 px-4"
+        className="fixed-bottom py-4 px-4 "
         style={{
           backgroundColor: "rgb(226, 224, 224)",
+          
         }}
       >
         <h5> Por favor, acepte los siguientes:</h5>

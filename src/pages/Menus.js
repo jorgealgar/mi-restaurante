@@ -11,12 +11,12 @@ const MenusGrupos = () => {
     <div style={{ backgroundColor: "#222422" }}>
       <Header></Header>
       <Titulo>MENUS DE GRUPOS</Titulo>
-      <section className="grupo1 d-flex justify-content-around  align-items-center flex-wrap pb-5  w-100">
+      <section className="grupo1 d-flex justify-content-around  align-items-center flex-wrap pb-5 w-100">
         <div className="imagen-menu1">
           <img src={ImgMenuGrupo1}></img>
         </div>
 
-        <div className="lista1 d-flex flex-column flex-wrap pt-5 ">
+        <div className="lista1 d-flex flex-column flex-wrap pt-5">
           <h3>MENU GRUPO "TRADICIÓN"</h3>
           <ul className="menu-grupo1 d-flex flex-column pt-3">
             PRIMEROS

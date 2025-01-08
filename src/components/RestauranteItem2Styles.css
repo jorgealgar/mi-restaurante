@@ -1,9 +1,7 @@
-.rest-item .texto2 {
-  width: 50%;
-}
-.rest-item .imagen2 img {
-  height: 90%;
-  width: 800px;
 
-  max-width: 600px;
+.rest-item .imagen2 img {
+  height: auto;
+  width: 100%;
+
+  max-width: 500px;
 }

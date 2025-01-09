@@ -7,6 +7,9 @@
 .menu-grupo1 ul {
    text-align: center;
 }
+.menu-grupo1 li {
+    list-style: none;
+}
 h3{
     color: white;
 }

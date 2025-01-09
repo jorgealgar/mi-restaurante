@@ -12,20 +12,13 @@ const Cookies = () => {
   const [legacyAccepted, setLegacyAccepted] = useState(false);
   // Al montar el componente, verifica si el usuario ya aceptó las políticas.
   useEffect(() => {
-    const clicado =
-      localStorage.getItem(
-        "politicasClicadas" && "cookiesClicadas" && "legacyClicadas"
-      ) === "true";
-    setVisible(!clicado); // Si ya aceptó, no se muestra el banner.
+    const ocultar = localStorage.getItem("ocultarBanner") === "true";
+    setVisible(!ocultar); // Si ya aceptó, no se muestra el banner.
   }, []); // Efecto que se ejecuta solo una vez al montar el componente.
 
   // Maneja la acción de aceptar las cookies, guardando la decisión en localStorage.
   const handleCookies = () => {
-    localStorage.setItem("politicasClicadas", "true"); // Almacena la aceptación en localStorage.
-    setVisible(false); // Oculta el banner.
-    localStorage.setItem("cookiesClicadas", "true");
-    setVisible(false);
-    localStorage.setItem("legacyClicadas", "true");
+    localStorage.setItem("ocultarBanner", "true");
     setVisible(false);
   };
 
@@ -37,7 +30,6 @@ const Cookies = () => {
   //Maneja el cambio del checkbox, actualizando el estado de aceptacion de cookies.
   const handleCookiesAccepted = (e) => {
     setCookiesAccepted(e.target.checked);
-    
   };
 
   //Maneja el cambio del checkbox, actualizando el estado de aceptacion del aviso legal..
@@ -52,7 +44,6 @@ const Cookies = () => {
         className="fixed-bottom py-4 px-4 "
         style={{
           backgroundColor: "rgb(226, 224, 224)",
-          
         }}
       >
         <h5> Por favor, acepte los siguientes:</h5>
@@ -104,7 +95,7 @@ const Cookies = () => {
         <button
           style={{ width: "200px" }}
           onClick={handleCookies}
-          disabled={!privacyAccepted}
+          disabled={!privacyAccepted || !legacyAccepted || !cookiesAccepted}
         >
           OK
         </button>

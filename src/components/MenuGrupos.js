@@ -4,12 +4,20 @@ import ImgMenuLlevar3 from "../assets/images/menu-llevar3.avif";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Dropdown from "react-bootstrap/Dropdown";
+import Accordion from "react-bootstrap/Accordion";
 import "./MenuGruposStyles.css";
+import { useState } from "react";
 
 const MenuGrupos = (img) => {
+  const [isAccordion1Open, setAccordion1Open] = useState(false);
+  const [isAccordion2Open, setAccordion2Open] = useState(false);
+
   return (
     <div className="menu-grupos d-flex flex-wrap justify-content-around px-5 w-100 pb-5 pt-5">
-      <Card className="mt-3" style={{ width: "30rem" }}>
+      <Card
+        className={`mt-3 ${isAccordion1Open ? "expanded-card" : ""}`}
+        style={{ width: "30rem", transition: "all 0.3s ease" }}
+      >
         <Card.Img variant="top" src={ImgMenuLlevar1} />
         <Card.Body className="card">
           <Card.Title>Menu de Grupo 1: "Sabores Tradicionales"</Card.Title>
@@ -24,6 +32,23 @@ const MenuGrupos = (img) => {
             característico exterior tostado y un interior cremoso que derrite en
             la boca, acompañado de un café o digestivo.
           </Card.Text>
+          <Accordion>
+            <Accordion.Item
+              eventKey="0"
+              onClick={() => setAccordion1Open(!isAccordion1Open)}
+            >
+              <Accordion.Header>Accordion Item #1</Accordion.Header>
+              <Accordion.Body>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
           <Dropdown>
             <Dropdown.Toggle variant="secondary" id="dropdown-basic">
               VER OPCIONES
@@ -35,7 +60,11 @@ const MenuGrupos = (img) => {
           </Dropdown>
         </Card.Body>
       </Card>
-      <Card className="mt-3" style={{ width: "30rem" }}>
+
+      <Card
+        className={`mt-3 ${isAccordion2Open ? "expanded-card" : ""}`}
+        style={{ width: "30rem", transition: "all 0.3s ease" }}
+      >
         <Card.Img variant="top" src={ImgMenuLlevar2} />
         <Card.Body>
           <Card.Title>Menu de Grupo 2: "Fusion Contemporanea"</Card.Title>
@@ -50,6 +79,23 @@ const MenuGrupos = (img) => {
             sobre un cremoso puré de coliflor y reducción de vino tinto, que
             desafía los límites de la cocina tradicional.
           </Card.Text>
+          <Accordion>
+            <Accordion.Item
+              eventKey="1"
+              onClick={() => setAccordion2Open(!isAccordion2Open)}
+            >
+              <Accordion.Header>Accordion Item #2</Accordion.Header>
+              <Accordion.Body>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </Accordion.Body>
+            </Accordion.Item>
+          </Accordion>
           <Dropdown>
             <Dropdown.Toggle variant="secondary" id="dropdown-basic">
               VER OPCIONES

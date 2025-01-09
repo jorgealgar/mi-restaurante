@@ -48,6 +48,9 @@ const Reservas = () => {
       setErrors(formErrors);
     } else {
       setErrors({});
+
+      // Enviar correo
+
       console.log("Formulario enviado con éxito:", {
         nombre,
         apellidos,
@@ -68,7 +71,7 @@ const Reservas = () => {
     <div style={{ backgroundColor: "#222422" }}>
       <Header></Header>
       <Titulo>RESERVAS Y LOCALIZACIÓN</Titulo>
-      <div className="formulario d-flex flex-wrap justify-content-around align-items-center p-5">
+      <div className="formulario d-flex flex-wrap justify-content-around align-items-center p-5 col-12 col-lg-6">
         <Form data-bs-theme="dark" onSubmit={handleSubmit}>
           <Form.Group className="mb-3" controlId="formName">
             <Form.Label style={{ color: "white" }}>Nombre</Form.Label>
@@ -78,7 +81,7 @@ const Reservas = () => {
               value={nombre}
               onChange={(e) => setNombre(e.target.value)}
               name="nombre"
-              isInvalid={!!errors.nombre}
+              isInvalid={errors.nombre}
             />
             <Form.Control.Feedback type="invalid">
               {errors.nombre}

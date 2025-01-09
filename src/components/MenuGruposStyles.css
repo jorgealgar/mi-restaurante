@@ -1,16 +1,18 @@
 .texto {
   color: rgb(244, 236, 236);
-  
 }
 
 h3 {
   text-align: center;
   padding-left: 5px;
 }
-div .card .card-body{
-  background-color: rgb(77, 83, 80);
+div .card .card-body {
+  background-color: #453939;
 }
-div .card .card-title{
+div .card .card-title {
   color: rgb(241, 241, 234);
-  
+}
+.expanded-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02); /* Destaca visualmente la tarjeta expandida */
 }

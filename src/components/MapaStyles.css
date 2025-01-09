@@ -1,13 +1,15 @@
 .mapa {
-  
+  width: 700px;
   height: auto;
-  
+
 }
 
 .mapa iframe {
   width: 600px;
   height: 450px;
+  max-width: 500px;
   padding-bottom: 10px;
+
 }
 h3 {
   padding-bottom: 15px;

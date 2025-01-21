@@ -1,16 +1,25 @@
 .caorusel {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   max-width: 800px;
   height: 500px;
-  margin: 0 auto;
 }
 .caorusel .img {
   width: 800px;
   height: 500px;
   align-items: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
- 
+}
+.contenedor-text .button {
+  color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
 }

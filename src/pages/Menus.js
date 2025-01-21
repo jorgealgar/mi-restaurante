@@ -39,7 +39,9 @@ const MenusGrupos = () => {
             <li>Brownie templado con helado de vainilla</li>
             <li>Tiramisú tradicional</li>
           </ul>
-          <p><strong> Precio 50€</strong></p>
+          <p>
+            <strong> Precio 50€</strong>
+          </p>
           <a href="/reservas">
             <button
               className="btn btn-secondary mt-5 mb-5 btn-lg"
@@ -50,6 +52,10 @@ const MenusGrupos = () => {
           </a>
         </div>
       </section>
+
+      <div className="d-flex justify-content-center d-lg-none">
+        <hr style={{ color: "white", width: "75%" }}></hr>
+      </div>
 
       <section className="grupo1 d-flex justify-content-around align-items-center flex-wrap pt-5 mt-5 w-100">
         <div className="lista1 d-flex flex-column flex-wrap">
@@ -75,7 +81,9 @@ const MenusGrupos = () => {
             <li>Tarta tatin de manzana con crema inglesa</li>
             <li>Pannacotta de vainilla con frutos rojos</li>
           </ul>
-          <p><strong> Precio 50€</strong></p>
+          <p>
+            <strong> Precio 50€</strong>
+          </p>
           <a href="/reservas">
             <button
               className="btn btn-secondary mt-5 mb-5 btn-lg"

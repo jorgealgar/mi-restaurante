@@ -11,6 +11,9 @@ const NuestrosRestaurantes = () => {
       <Header></Header>
       <Titulo>NUESTROS RESTAURANTES</Titulo>
       <RestauranteItem1></RestauranteItem1>
+      <div className="d-flex justify-content-center d-lg-none">
+        <hr style={{ color: "white", width: "75%" }}></hr>
+      </div>
       <RestauranteItem2></RestauranteItem2>
       <hr style={{ color: "white", width: "75%", marginLeft: "200px" }}></hr>
       <Footer></Footer>

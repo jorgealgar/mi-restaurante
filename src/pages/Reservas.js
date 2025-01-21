@@ -6,8 +6,9 @@ import Titulo from "../components/Titulo";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Cookies from "../components/Cookies";
-
 import "./ReservasStyles.css";
+
+import { useForm } from "@formspree/react";
 
 const Reservas = () => {
   //Control del estado del input de Nombre
@@ -24,6 +25,8 @@ const Reservas = () => {
   const [restaurante, setRestaurante] = useState("");
   //Control del estado del input de Check
   const [check, setCheck] = useState(false);
+
+  const [state, handleSubmit] = useForm("mbllnerp");
   const [errors, setErrors] = useState({});
 
   const validateForm = () => {
@@ -37,30 +40,17 @@ const Reservas = () => {
     if (!hora) newErrors.hora = "La hora es obligatoria.";
     if (!restaurante)
       newErrors.restaurante = "Debes seleccionar un restaurante.";
-    if (!check) newErrors.check = "Debes aceptar recibir promociones.";
     return newErrors;
   };
 
-  const handleSubmit = (event) => {
+  const submit = (event) => {
     event.preventDefault();
     const formErrors = validateForm();
     if (Object.keys(formErrors).length > 0) {
       setErrors(formErrors);
     } else {
       setErrors({});
-
-      // Enviar correo
-
-      console.log("Formulario enviado con éxito:", {
-        nombre,
-        apellidos,
-        email,
-        fecha,
-        hora,
-        restaurante,
-        check,
-      });
-      alert("Formulario enviado con éxito.");
+      handleSubmit();
     }
 
     /*const formElements = event.currentTarget.elements;
@@ -93,7 +83,7 @@ const Reservas = () => {
             <Form.Control
               type="text"
               placeholder="Enter last name"
-              family-name="apellidos"
+              name="apellidos"
               value={apellidos}
               onChange={(e) => setApellidos(e.target.value)}
               isInvalid={!!errors.apellidos}
@@ -155,6 +145,7 @@ const Reservas = () => {
             <Form.Select
               value={restaurante}
               onChange={(e) => setRestaurante(e.target.value)}
+              name="resturante"
               isInvalid={!!errors.restaurante}
             >
               <option value="">Selecciona un restaurante</option>
@@ -173,11 +164,8 @@ const Reservas = () => {
               label="Quiero recibir promociones y ofertas"
               value={check}
               onChange={(e) => setCheck(e.target.checked)}
-              isInvalid={!!errors.check}
+              name="promociones"
             />
-            <Form.Control.Feedback type="invalid">
-              {errors.hora}
-            </Form.Control.Feedback>
           </Form.Group>
 
           <Button variant="primary" type="submit">

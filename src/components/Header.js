@@ -7,7 +7,7 @@ import "./HeaderStyles.css";
 function Header() {
   return (
     <nav className="d-flex justify-content-around align-items-center flex-wrap header">
-      <Dropdown className="boton-izda">
+      <Dropdown className="boton-izda col-md-4 justify-content-center">
         <Dropdown.Toggle
           variant="secondary"
           id="dropdown-basic"
@@ -62,7 +62,7 @@ function Header() {
         href="/Carta.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className="d-md-block d-none"
+        className="d-md-block d-none col-md-4"
       >
         <Button className="boton-carta" variant="secondary">
           Carta

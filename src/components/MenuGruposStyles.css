@@ -9,6 +9,9 @@ h3 {
 div .card .card-body {
   background-color: #453939;
 }
+.card .card-body {
+  height: 500px;
+}
 div .card .card-title {
   color: rgb(241, 241, 234);
 }

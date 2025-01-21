@@ -27,24 +27,29 @@ function Restaurantes({ restaurantes }) {
       );
     } else {
       return (
-        <div className="d-flex flex-wrap align-items-center flex-row px-5 pb-5 text-center justify-content-around restaurante1">
-          <div className="imagen">
-            <img src={rest.img}></img>
-          </div>
+        <>
+          <div className="d-flex flex-wrap align-items-center flex-row px-5 pb-5 text-center justify-content-around restaurante1">
+            <div className="imagen">
+              <img src={rest.img}></img>
+            </div>
 
-          <div className="texto d-flex flex-column align-items-center justify-content-center px-5 col-xl-6 col-12">
-            <h4 style={{ color: "aliceblue" }}>LA RAIZ</h4>
-            <p>{rest.descripcion}</p>
-            <a href="/nuestrosrestaurantes">
-              <button
-                type="button"
-                className="btn btn-secondary mt-3 mb-5 btn-lg"
-              >
-                MAS INFO
-              </button>
-            </a>
+            <div className="texto d-flex flex-column align-items-center justify-content-center px-5 col-xl-6 col-12">
+              <h4 style={{ color: "aliceblue" }}>LA RAIZ</h4>
+              <p>{rest.descripcion}</p>
+              <a href="/nuestrosrestaurantes">
+                <button
+                  type="button"
+                  className="btn btn-secondary mt-3 mb-5 btn-lg"
+                >
+                  MAS INFO
+                </button>
+              </a>
+            </div>
           </div>
-        </div>
+          <div className="d-flex justify-content-center d-lg-none">
+            <hr style={{ color: "white", width: "75%" }}></hr>
+          </div>
+        </>
       );
     }
   });

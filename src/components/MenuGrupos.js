@@ -37,15 +37,32 @@ const MenuGrupos = (img) => {
               eventKey="0"
               onClick={() => setAccordion1Open(!isAccordion1Open)}
             >
-              <Accordion.Header>Accordion Item #1</Accordion.Header>
-              <Accordion.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <Accordion.Header>SABORES TRADICIONALES</Accordion.Header>
+              <Accordion.Body style={{}}>
+                <ul className="menu-grupo2 d-flex flex-column pt-3">
+                  PRIMEROS
+                  <hr style={{ color: "white" }}></hr>
+                  <li>Tartar de atún con aguacate y wakame</li>
+                  <li>Carpaccio de ternera con rúcula y parmesano</li>
+                  <li>Humus de garbanzo con pita casera y crudités</li>
+                </ul>
+                <ul className="menu-grupo2">
+                  SEGUNDOS
+                  <hr style={{ color: "white" }}></hr>
+                  <li>Solomillo de cerdo con salsa de Pedro Ximénez</li>
+                  <li>Lubina a la plancha con verduras salteadas</li>
+                  <li>Risotto de boletus con trufa negra</li>
+                </ul>
+                <ul className="menu-grupo2">
+                  POSTRES
+                  <hr style={{ color: "white" }}></hr>
+                  <li>Coulant de chocolate con helado de frambuesa</li>
+                  <li>Tarta tatin de manzana con crema inglesa</li>
+                  <li>Pannacotta de vainilla con frutos rojos</li>
+                </ul>
+                <p>
+                  <strong> Precio 50€</strong>
+                </p>
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>
@@ -84,15 +101,38 @@ const MenuGrupos = (img) => {
               eventKey="1"
               onClick={() => setAccordion2Open(!isAccordion2Open)}
             >
-              <Accordion.Header>Accordion Item #2</Accordion.Header>
+              <Accordion.Header>FUSION CONTEMPORANEA</Accordion.Header>
               <Accordion.Body>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <ul className="menu-grupo2 d-flex flex-column pt-3">
+                  PRIMEROS
+                  <hr style={{ color: "white" }}></hr>
+                  <li>
+                    Surtido de ibéricos con pan de cristal y tomate rallado
+                  </li>
+                  <li>Ensalada de burrata con tomates cherry y pesto casero</li>
+                  <li>Croquetas caseras de jamón ibérico (6 unidades)</li>
+                </ul>
+                <ul className="menu-grupo2">
+                  SEGUNDOS
+                  <hr style={{ color: "white" }}></hr>
+                  <li>
+                    Entrecot de ternera a la parrilla con patatas y pimientos
+                  </li>
+                  <li>
+                    Bacalao confitado con crema de ajo y espinacas salteadas
+                  </li>
+                  <li>Arroz meloso con setas de temporada y parmesano</li>
+                </ul>
+                <ul className="menu-grupo2">
+                  POSTRES
+                  <hr style={{ color: "white" }}></hr>
+                  <li>Tarta de queso casera con coulis de frutos rojos</li>
+                  <li>Brownie templado con helado de vainilla</li>
+                  <li>Tiramisú tradicional</li>
+                </ul>
+                <p>
+                  <strong> Precio 50€</strong>
+                </p>
               </Accordion.Body>
             </Accordion.Item>
           </Accordion>

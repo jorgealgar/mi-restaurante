@@ -50,11 +50,8 @@ const Reservas = () => {
       setErrors(formErrors);
     } else {
       setErrors({});
-      handleSubmit();
+      handleSubmit(event);
     }
-
-    /*const formElements = event.currentTarget.elements;
-    console.log(formElements.formEmail.value);*/
   };
 
   return (
@@ -62,7 +59,7 @@ const Reservas = () => {
       <Header></Header>
       <Titulo>RESERVAS Y LOCALIZACIÓN</Titulo>
       <div className="formulario d-flex flex-wrap justify-content-around align-items-center p-5 col-12 col-lg-6">
-        <Form data-bs-theme="dark" onSubmit={handleSubmit}>
+        <Form data-bs-theme="dark" onSubmit={submit}>
           <Form.Group className="mb-3" controlId="formName">
             <Form.Label style={{ color: "white" }}>Nombre</Form.Label>
             <Form.Control

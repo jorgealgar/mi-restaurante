@@ -47,3 +47,6 @@ Para ejecutar el proyecto localmente, sigue estos pasos:
 ```bash
 git clone https://github.com/tu-usuario/proyecto-restaurantes.git
 ```
+## 🎨 Diseño en Figma
+Puedes ver el diseño aquí:
+👉 [Ver en Figma](https://www.figma.com/design/d9OVFU4SGCiYzRyIaET8js/Mi-Restaurante?node-id=0-1&t=EBwBXnsAGP6Een94-1)
